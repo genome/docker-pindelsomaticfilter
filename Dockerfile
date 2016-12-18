@@ -6,5 +6,5 @@ LABEL \
     description="pindel somatic filter"
 
 COPY somatic_indelfilter.pl /usr/bin/somatic_indelfilter.pl
-ENTRYPOINT ["/usr/bin/somatic_indelfilter.pl"]
+ENTRYPOINT ["/usr/bin/perl", "/usr/bin/somatic_indelfilter.pl"]
 
